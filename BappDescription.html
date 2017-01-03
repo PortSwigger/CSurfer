@@ -1,0 +1,8 @@
+<p>This extension automatically handles anti-CSRF tokens, and hides the 
+mechanism from the browser (or other tool) that is using Burp. It tracks the 
+most recent token received in a response, and ensures that each request always 
+contains the latest token. </p>
+<p>It also allows Burp to be chained as an upstream proxy from other security scanning tools that are not CSRF-aware.</p>
+<p>Requires Java version 7.</p>
+<p>Read more: <a href="https://github.com/asaafan/CSurfer/">
+https://github.com/asaafan/CSurfer/</a></p>
