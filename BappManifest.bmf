@@ -7,5 +7,5 @@ MinPlatformVersion: 0
 ProOnly: False
 Author: A. Saafan
 ShortDescription: Hides and automatically handles anti-CSRF token defenses.
-EntryPoint: build/libs/csurfer-all.jar
-BuildCommand: gradle -PburpJar=$BURP_JAR fatJar
+EntryPoint: build/libs/c-surfer-all.jar
+BuildCommand: gradle fatJar
