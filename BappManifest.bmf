@@ -1,6 +1,7 @@
 Uuid: 086c6af8b24c40a79a5e99b71df10f11
 ExtensionType: 1
 Name: CSurfer
+RepoName: c-surfer
 ScreenVersion: 1.1
 SerialVersion: 2
 MinPlatformVersion: 0
