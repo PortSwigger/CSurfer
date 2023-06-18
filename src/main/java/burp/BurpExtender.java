@@ -3,20 +3,14 @@ package burp;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeListener;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.swing.Action;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-//import burp.*;
-
-public class BurpExtender implements IHttpListener, ITab {
+public class BurpExtender implements IBurpExtender, IHttpListener, ITab {
 	
 	 
 	public IBurpExtenderCallbacks mycallbacks;
@@ -28,6 +22,7 @@ public class BurpExtender implements IHttpListener, ITab {
 		
 	/*This method is invoked at startup. It is needed if you are implementing any method of IBurpExtenderCallbacks interface.
 	In this example, we have implemented three such methods of this interface.*/
+	@Override
 	public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks)
 	{
 		mycallbacks = callbacks;
