@@ -2,11 +2,12 @@ Uuid: 086c6af8b24c40a79a5e99b71df10f11
 ExtensionType: 1
 Name: CSurfer
 RepoName: c-surfer
-ScreenVersion: 1.1
-SerialVersion: 2
+ScreenVersion: 1.1a
+SerialVersion: 3
 MinPlatformVersion: 0
 ProOnly: False
 Author: A. Saafan
 ShortDescription: Hides and automatically handles anti-CSRF token defenses.
 EntryPoint: build/libs/c-surfer-all.jar
-BuildCommand: gradle jar
+BuildCommand: ./gradlew jar
+SupportedProducts: Pro, Community
